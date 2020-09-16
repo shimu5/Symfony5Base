@@ -9,13 +9,18 @@ use Symfony\Component\HttpFoundation\Response;
 class ConferenceController extends AbstractController
 {
     /**
-     *@Route("/", name="homepage")
+     *@Route("/hello/{name}", name="homepage")
      */
-    public function index()
+    public function index(string $name = '')
     {
+        $greet = '';
+        if ($name) {
+            $greet = sprintf('<h1>Hello %s!</h1>', htmlspecialchars($name));
+        }
         return new Response(<<<EOF
                 <html>
                     <body>
+                    $greet
                         <img src="/images/under-construction.gif" />
                     </body>
                 </html>
