@@ -5,11 +5,13 @@
 --------------------------------------------------------------------------------
 ##### Install a  new project:
 Skeleton has all the basic installaction packages
-```$ composer create-project symfony/website-skeleton my-project       
+```
+$ composer create-project symfony/website-skeleton my-project       
 OR 
 $  symfony new my_project_name --demo
 $   symfony new my_project
-$ composer create-project symfony/skeleton my_project```
+$ composer create-project symfony/skeleton my_project
+```
 
 Go to the project  directory and check:
 ```
@@ -26,8 +28,9 @@ $ symfony check:requirements
 $  php -S 127.0.0.1:8000 -t public/
 
 To get to know when the file modified: 
-git log -- src/Controller/ConferenceController.php
-
+ ``` 
+ git log -- src/Controller/ConferenceController.php
+ ```
 To Run Server:
 ```
 $ symfony server:start
