@@ -29,25 +29,34 @@ To get to know when the file modified:
 git log -- src/Controller/ConferenceController.php
 
 To Run Server:
-```$ symfony server:start
+```
+$ symfony server:start
 symfony server:start -d
 symfony server:stop
 symfony open:local```
 
 
 To Check autowired available services:
- ```php bin/console debug:autowiring```
+ ``` 
+ php bin/console debug:autowiring
+ ```
  
  Maker bundle only use to create CRUD by command Line: 
- ```symfony composer req maker --dev ```
+ ```
+ symfony composer req maker --dev
+ ```
 
 Show all list that symfony make command can do: 
- ```$ symfony console list make
+ ```
+ $ symfony console list make
 $symfony console make:entity Blog
-$symfony console make:crud Blog ```
+$symfony console make:crud Blog
+```
 
 List of works php bin/console can do:
- ```$php bin/console ```
+ ```
+ $php bin/console
+ ```
 
 
 
